@@ -1,0 +1,13 @@
+name: support-triage-env
+version: 1.0
+entrypoint: app:app
+
+models:
+  observation: env.models.Observation
+  action: env.models.Action
+  reward: env.models.Reward
+
+tasks:
+  - id: easy
+  - id: medium
+  - id: hard
